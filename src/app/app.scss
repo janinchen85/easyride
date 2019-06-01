@@ -1,0 +1,568 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+$main_color: rgba(0,0,0,0.75);
+$sec_color: #ff8001;
+$button_color: rgba(255, 128, 1, 0.75);
+$third_color: rgba(73, 73, 73, 0.75);
+$font_second: #C3C3C3;
+$head: hsl(0, 0%, 29%);
+$black_text: black;
+$global_width: 70%;
+$fab-list-button-background-color: yellow !important;
+
+h5{
+  margin: auto;
+  color: $sec_color;
+  font-weight: bolder;
+  font-size: 1em;
+}
+
+h4{
+  margin: auto;
+  color: $font_second;
+  font-weight: bolder;
+  font-size: 1em;
+  padding: 10% 5% 10% 5%;
+}
+
+p{
+  margin: auto;
+  color: $font_second;
+  font-size: 0.8em;
+}
+
+span{
+  color: $sec_color !important;
+}
+
+.body{
+  color: $sec_color;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image:url('../assets/img/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+ion-header{
+  border-top: 1px solid $sec_color;
+  border-bottom: 1px solid $sec_color;
+}
+
+ion-title {
+  text-align: center;
+  margin: auto;
+}
+
+ion-footer{
+  border-top: 1px solid $sec_color;
+  border-bottom: 1px solid $sec_color;
+}
+
+ion-content{
+  height: 100%;
+  background-color: transparent !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main_content_area{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.main_content{
+  height: 100%;
+  width: 100%;
+}
+
+.description_area{
+  width: $global_width;
+  height: auto;
+  margin: auto;
+  text-align: center;
+}
+
+.form_area{
+  width: $global_width;
+  height: auto;
+  margin: auto;
+  text-align: center;
+}
+
+.button_headline{
+  margin-top: 3%;
+  height: 30px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+ }
+
+.buttons_area{
+  margin-top: 3%;
+  width: $global_width;
+  height: 10vh;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $button_color;
+}
+
+
+.button_left{
+  width: 30%;
+  height: 100%;
+  background:url('../assets/img/btn_higlight2.png') no-repeat center center;
+  background-size: 100% 100%;
+  float: left;
+}
+
+.button_right{
+  width: $global_width;
+  height: 100%;
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button_right p{
+  color: $black_text;
+  font-weight: bolder;
+  font-size: 0.800em;
+}
+
+.form_row{
+  width: 100%;
+  height: 8vh;
+  margin-top: 2%;
+}
+
+.form_left{
+  width: 25%;
+  height: 100%;
+  float: left;
+}
+
+.form_right{
+  width: 75%;
+  height: 100%;
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons{
+  width: 100%;
+  height: 100%;
+  margin-left: -5px;
+}
+
+.main_bg_color{
+  background-color: $main_color;
+}
+
+.border_all{
+  border: 0.5px solid $sec_color;
+}
+
+.border_all_dark{
+  border: 1px solid $black_text;
+}
+
+ion-item{
+  background-color: transparent !important;
+}
+
+ion-item-sliding{
+  background-color: transparent !important;
+}
+
+ion-input{
+  color: $sec_color;
+  background-color: transparent !important;
+}
+
+ion-datetime{
+  color: $sec_color;
+  margin: -10px;
+}
+
+.footer_bar{
+  width: 100%;
+  height: 8vh;
+}
+
+.footer_home{
+  width: 25%;
+  height: 100%;
+  float: left;
+}
+
+.footer_profile{
+  width: 25%;
+  height: 100%;
+  float: left;
+}
+
+.footer_rides{
+  width: 25%;
+  height: 100%;
+  float: left;
+}
+
+.footer_settings{
+  width: 25%;
+  height: 100%;
+  float: left;
+}
+
+.scroll {
+  scroll-content {
+      overflow-y: scroll;
+  }
+}
+
+.card_area{
+  margin-top: 3%;
+  width: 90%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ion-item.card_head{
+  width: 100%;
+  background-color: $sec_color !important;
+}
+
+.card_foot{
+  height: auto;
+  width: 100%;
+  border-top: 0.5px solid $sec_color;
+}
+
+.card_head_left, .card_foot_left{
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+.card_foot_right{
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+.card_head_left p{
+  text-align: left;
+  color: $black_text;
+  font-weight: bold;
+  font-size: 0.900em;
+}
+
+.card_foot_left p{
+  text-align: left;
+  font-size: 0.900em;
+  color: $font_second
+}
+
+.card_head_right{
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+.card_head_right p{
+  text-align: right;
+  color: $black_text;
+  font-weight: bold;
+  font-size: 0.900em;
+}
+
+.card_foot_right p{
+  text-align: right;
+  color: $sec_color;
+  font-weight: bold;
+  font-size: 0.900em;
+}
+
+.card_content{
+  height: auto;
+  display: block;
+}
+
+.card_content_left{
+  height: 100%;
+  width: 40%;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card_left_info{
+  width: 100%;
+  text-align: right;
+}
+
+.card_right_info{
+  width: 100%;
+  text-align: left;
+}
+
+.card_left_info span, .card_right_info span{
+  font-size: 1em;
+  font-weight: bolder;
+}
+
+.card_left_info p, .card_right_info p{
+  margin-top: 15px;
+  color: $font_second;
+}
+
+.card_content_right{
+  height: 100%;
+  width: 40%;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card_content_middle{
+  margin-top: 10%;
+  height: 100%;
+  width: 20%;
+  float: left;
+}
+
+.card_middle{
+  margin-top: 50%;
+  height: 100%;
+  border-bottom: 0.5px solid $sec_color;
+  margin: 0 5px 0 5px;
+}
+
+
+/*
+.md, .ios, .wp, .scroll-content {
+  overflow-y:hidden;
+}
+.scroll {
+  scroll-content {
+      overflow-y: scroll;
+  }
+}
+.md, .ios, .wp, ion-content {
+  background-color: transparent !important;
+}
+
+.head, .foot{
+  height: 10%;
+}
+
+
+ion-input{
+  height: 5%;
+  color: $sec_color;
+}
+
+ion-datetime{
+  height: 5%;
+  color: $sec_color;
+}
+
+ion-label{
+  height: 5%;
+  color: $font_second;
+}
+
+.main_cont{
+  margin: auto;
+  height: 100%;
+  width: 100%;
+}
+
+.main_row{
+  margin: auto;
+  width: $global_width;
+}
+
+.rows{
+  margin: 2%;
+}
+
+.rows p{
+  margin: auto;
+  margin-left: -15%;
+  text-align: center;
+  padding: 10% 0 10% 5%;
+  color: black;
+  font-weight: bolder;
+  font-size: 0.750em
+}
+
+.rows h4{
+  padding: 5% 0 5% 5%;
+  text-align: center;
+  color: $font_second;
+  font-weight: bolder;
+  font-size: 1em;
+}
+
+.button_highlight{
+  width: 75%;
+  height: 100%;
+  background:url('../assets/img/btn_higlight.png') no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.button_highlight2{
+  width: 100%;
+  height: 100%;
+  background:url('../assets/img/btn_higlight2.png') no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.icons{
+  width: 100%;
+  height: 100%;
+  margin-left: -5px;
+}
+
+.textfield{
+  margin: auto;
+  height: auto;
+  width: 100%;
+}
+
+.input{
+  margin-left: -10px;
+  font-size: 1em;
+}
+
+.border{
+  border-top: 0.5px solid $sec_color;
+  border-bottom: 0.5px solid $sec_color;
+}
+
+.border_all{
+  border: 0.5px solid $sec_color;
+}
+
+.border_all_dark{
+  border: 1px solid black;
+}
+
+.main_bg_color{
+  background-color: $main_color;
+}
+
+.sec_bg_color{
+  background-color: $button_color;
+}
+*/
+//##### icons ####
+
+.driver_icon{
+  background:url('../assets/img/driver.png') no-repeat center center;
+  background-size: 55% 60%;
+}
+
+.passenger_icon{
+  background:url('../assets/img/passenger.png') no-repeat center center;
+  background-size: 40% 60%;
+}
+
+
+.user_icon{
+  background:url('../assets/img/user.png') no-repeat center center;
+  background-size: $global_width 80%;
+}
+
+.pwd_icon{
+  background:url('../assets/img/pwd.png') no-repeat center center;
+  background-size: $global_width 80%;
+}
+
+.lost_pwd_icon{
+  margin-left: -15%;
+  background:url('../assets/img/lost_pwd.png') no-repeat center center;
+  background-size: 60% 80%;
+}
+
+.unlock_icon{
+  margin-left: -15%;
+  background:url('../assets/img/unlock.png') no-repeat center center;
+  background-size: 50% 60%;
+}
+
+.new_user_icon{
+  margin-left: -8px;
+  background:url('../assets/img/new_user.png') no-repeat center center;
+  background-size: contain;
+}
+
+.start_icon{
+  background:url('../assets/img/start.png') no-repeat center center;
+  background-size: 80% 80%;
+}
+
+.dest_icon{
+  background:url('../assets/img/dest.png') no-repeat center center;
+  background-size: 40% 65%;
+}
+
+.date_icon{
+  background:url('../assets/img/date.png') no-repeat center center;
+  background-size: 60% 70%;
+}
+
+.time_icon{
+  background:url('../assets/img/time.png') no-repeat center center;
+  background-size: 60% 70%;
+}
+
+.home_icon{
+  background:url('../assets/img/home.png') no-repeat center center;
+  background-size: 50% 70%;
+}
+
+.profile_icon{
+  background:url('../assets/img/user.png') no-repeat center center;
+  background-size: 50% 70%;
+}
+
+.rides_icon{
+  background:url('../assets/img/driver.png') no-repeat center center;
+  background-size: 40% 60%;
+}
+
+.settings_icon{
+  background:url('../assets/img/settings.png') no-repeat center center;
+  background-size: 40% 60%;
+}
+
+
+

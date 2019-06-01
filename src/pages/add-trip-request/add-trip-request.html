@@ -1,0 +1,35 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>addTrip</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-row class="main_row">
+        <ion-col col-12 class="rows" no-padding>
+          <ion-row class="main_bg_color border_all">
+            <ion-col col-3>
+              <div class="icons start_icon"></div>
+            </ion-col>
+            <ion-col col-9 class="textfield">
+              <ion-input [(ngModel)]="trip.starting" type="text" placeholder="Starting location" class="input" clearOnEdit></ion-input>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+        <ion-col col-12 class="rows" no-padding>
+          <ion-row class="main_bg_color border_all">
+            <ion-col col-3>
+              <div class="icons dest_icon"></div>
+            </ion-col>
+            <ion-col col-9 class="textfield">
+              <ion-input [(ngModel)]="trip.destination" type="text" placeholder="Destination" class="input" clearOnEdit></ion-input>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+      <p>{{trip | json}}</p>
+      <button ion-button block (click)="addTrip(trip)">Add Trip</button>
+</ion-content>

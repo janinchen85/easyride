@@ -1,0 +1,33 @@
+page-search-result {
+
+
+  ion-navbar h5{
+    margin-left: -20%;
+  }
+
+  .description_area{
+    margin-top: 3%;
+    width: 90%;
+  }
+
+
+
+  .buttons_area{
+    margin-top: 0 !important;
+  }
+
+  .button_headline p{
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 10px;
+  }
+
+  .add{
+    margin-top: -120px;
+    margin-left: -20px;
+    position: relative;
+    z-index: 100;
+  }
+
+
+}

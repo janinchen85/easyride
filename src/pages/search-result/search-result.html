@@ -1,0 +1,78 @@
+<div class="body">
+  <ion-header>
+    <ion-navbar color="main">
+      <ion-title>
+        <h5>{{ title }}</h5>
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+  <ion-content>
+    <div class="description_area main_bg_color border_all">
+      <h4>Available Drivers from:
+        <span>Date</span>
+      </h4>
+    </div>
+    <ion-card class="card_area main_bg_color border_all" *ngFor="let trip of trips | async">
+      <ion-item class="card_head">
+        <div class="card_head_left">
+          <p>{{ trip.startdate | date:'dd.MM.yyyy' }}</p>
+        </div>
+        <div class="card_head_right">
+          <p>{{ trip.price }}€</p>
+        </div>
+      </ion-item>
+      <ion-item class="card_content">
+        <div class="card_content_left">
+          <div class="card_left_info">
+            <span>{{ trip.starting }}</span>
+            <br>
+            <p>{{ trip.starttime }}</p>
+          </div>
+        </div>
+        <div class="card_content_middle">
+          <div class="card_middle"></div>
+        </div>
+        <div class="card_content_right">
+          <div class="card_right_info">
+            <span>{{ trip.destination }}</span>
+            <br>
+            <p>{{ trip.starttime }}</p>
+          </div>
+        </div>
+      </ion-item>
+      <ion-item class="card_foot">
+        <div class="card_foot_left">
+          <p>{{ trip.username}}</p>
+        </div>
+        <div class="card_foot_right">
+          <p>ICONS</p>
+        </div>
+      </ion-item>
+    </ion-card>
+  </ion-content>
+  <div class="add" navPush="AddRideRequestPage">
+    <ion-fab buttom right edge>
+      <button class="border_all" ion-fab color="dark">
+        <ion-icon name='add'></ion-icon>
+      </button>
+    </ion-fab>
+  </div>
+  <ion-footer>
+    <ion-toolbar color="main">
+      <div class="footer_bar">
+        <div class="footer_home" (click)="home()">
+          <div class="icons home_icon"></div>
+        </div>
+        <div class="footer_profile">
+          <div class="icons profile_icon"></div>
+        </div>
+        <div class="footer_rides" (click)="editRides()">
+          <div class="icons rides_icon"></div>
+        </div>
+        <div class="footer_settings">
+          <div class="icons settings_icon"></div>
+        </div>
+      </div>
+    </ion-toolbar>
+  </ion-footer>
+</div>

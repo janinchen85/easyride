@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-navbar color="main">
+    <ion-title><h4>{{ title }}</h4></ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <ion-grid>
+    <div class="main_cont">
+      <ion-row class="row_logo">
+        <div class="logo"></div>
+      </ion-row>
+      <ion-row class="main_row">
+        <ion-col col-12 class="rows" no-padding>
+          <ion-row class="main_bg_color border_all">
+            <ion-col col-3>
+              <div class="icons user_icon"></div>
+            </ion-col>
+            <ion-col col-9 class="textfield">
+              <ion-input type="text" placeholder="Username" class="input" clearOnEdit></ion-input>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+        <ion-col col-12 class="rows" no-padding>
+          <ion-row class="main_bg_color border_all">
+            <ion-col col-3>
+              <div class="icons pwd_icon"></div>
+            </ion-col>
+            <ion-col col-9 class="textfield">
+              <ion-input type="text" placeholder="Password" class="input" clearOnEdit></ion-input>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+      <ion-row class="row_forgot_pwd main_bg_color border" no-padding>
+        <ion-col col-2 no-padding>
+          <div class="button_highlight">
+            <div class="icons lost_pwd_icon"></div>
+          </div>
+        </ion-col>
+        <ion-col col-10><p>Forgot your password?</p></ion-col>
+      </ion-row>
+      <ion-row class="row_login_btn">
+        <ion-col col-8 offset-2 padding (click)="LogIn()">
+          <ion-row class="sec_bg_color border_all_dark">
+            <ion-col col-4 no-padding>
+              <div class="button_highlight2">
+                <div class="icons unlock_icon"></div>
+              </div>
+            </ion-col>
+            <ion-col col-7><p>Login</p></ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+      <ion-row class="row_new_user main_bg_color border" no-padding>
+        <ion-col col-3 no-padding>
+          <div class="button_highlight">
+            <div class="icons new_user_icon"></div>
+          </div>
+        </ion-col>
+        <ion-col col-9><p>Create new Account</p></ion-col>
+      </ion-row>
+    </div>
+  </ion-grid>
+</ion-content>

@@ -1,0 +1,100 @@
+<ion-content>
+    <ion-slides>
+      <!-- Slide 1 -->
+      <ion-slide>
+        <ion-grid no-padding>
+          <ion-row class="img intro1"></ion-row>
+          <ion-row class="intro_desc">
+            <h4>Search for passengers</h4>
+            <p>No one should permanently drive alone and get bored</p>
+          </ion-row>
+            <ion-row  class="intro_pager">
+              <ion-col>
+                <div class="buttons">
+                  <ion-row>
+                    <div class="arrow_space"></div>
+                    <div class="pager_buttons active"></div>
+                    <div class="pager_buttons inactive" (click)="goToSlide(1)"></div>
+                    <div class="pager_buttons inactive" (click)="goToSlide(2)"></div>
+                    <div class="arrow_right" (click)="goNext()"></div>
+                  </ion-row>
+                </div>
+              </ion-col>
+            </ion-row>
+          <ion-row class="intro_footer" navPush="LoginPage">
+            <ion-col>
+              <div class="skip_slide">
+                <ion-row>
+                    <P>Skip</P><div class="skip"></div>
+                </ion-row>
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-slide>
+      <!-- Slide 2 -->
+      <ion-slide>
+          <ion-grid no-padding>
+            <ion-row class="img intro2"></ion-row>
+            <ion-row class="intro_desc">
+              <h4>Seaarch for a rider</h4>
+              <p>No one should be annoyed because of bad public transport</p>
+            </ion-row>
+              <ion-row  class="intro_pager">
+                <ion-col>
+                  <div class="buttons">
+                    <ion-row>
+                      <div class="arrow_left" (click)="goBack()"></div>
+                      <div class="pager_buttons inactive" (click)="goToSlide(0)"></div>
+                      <div class="pager_buttons active"></div>
+                      <div class="pager_buttons inactive" (click)="goToSlide(2)"></div>
+                      <div class="arrow_right" (click)="goNext()"></div>
+                    </ion-row>
+                  </div>
+                </ion-col>
+              </ion-row>
+            <ion-row class="intro_footer" navPush="LoginPage">
+              <ion-col>
+                <div class="skip_slide">
+                  <ion-row>
+                      <P>Skip</P><div class="skip"></div>
+                  </ion-row>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-slide>
+        <!-- Slide 3 -->
+      <ion-slide>
+          <ion-grid no-padding>
+            <ion-row class="img intro3"></ion-row>
+            <ion-row class="intro_desc">
+              <h4>Experience the benefits</h4>
+              <p>Everyone should be able to save time, money and trouble</p>
+            </ion-row>
+              <ion-row  class="intro_pager">
+                <ion-col>
+                  <div class="buttons">
+                    <ion-row>
+                      <div class="arrow_left" (click)="goBack()"></div>
+                      <div class="pager_buttons inactive" (click)="goToSlide(0)"></div>
+                      <div class="pager_buttons inactive" (click)="goToSlide(1)"></div>
+                      <div class="pager_buttons active"></div>
+                      <div class="arrow_space"></div>
+                    </ion-row>
+                  </div>
+                </ion-col>
+              </ion-row>
+            <ion-row class="intro_footer" navPush="LoginPage">
+              <ion-col>
+                <div class="skip_slide">
+                  <ion-row>
+                      <P>Login</P><div class="skip"></div>
+                  </ion-row>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-slide>
+    </ion-slides>
+  </ion-content>

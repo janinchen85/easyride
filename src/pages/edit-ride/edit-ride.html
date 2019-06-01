@@ -1,0 +1,92 @@
+<div class="body">
+  <ion-header>
+    <ion-navbar color="main">
+      <ion-title>
+        <h5>{{ title }}</h5>
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+  <ion-content>
+    <div class="main_content_area">
+      <div class="main_content">
+        <div class="description_area main_bg_color border_all">
+          <h4>Add your request as
+            <span>passenger</span>
+          </h4>
+        </div>
+        <div class="form_area">
+          <!-- field 1 -->
+          <div class="form_row main_bg_color border_all">
+            <div class="form_left">
+              <div class="icons start_icon"></div>
+            </div>
+            <div class="form_right">
+              <ion-item no-lines>
+                <ion-input [(ngModel)]="trip.starting" type="text" placeholder="Starting location" clearOnEdit></ion-input>
+              </ion-item>
+            </div>
+          </div>
+          <!-- field 1 -->
+          <div class="form_row main_bg_color border_all">
+            <div class="form_left">
+              <div class="icons dest_icon"></div>
+            </div>
+            <div class="form_right">
+              <ion-item no-lines>
+                <ion-input [(ngModel)]="trip.destination" type="text" placeholder="Destination" clearOnEdit></ion-input>
+              </ion-item>
+            </div>
+          </div>
+          <!-- field 1 -->
+          <div class="form_row main_bg_color border_all">
+            <div class="form_left">
+              <div class="icons date_icon"></div>
+            </div>
+            <div class="form_right">
+              <ion-item no-lines>
+                <ion-datetime [(ngModel)]="trip.startdate" displayFormat="DD.MM.YYYY" placeholder="{{today | date:'dd.MM.yyyy'}}" clearOnEdit></ion-datetime>
+              </ion-item>
+            </div>
+          </div>
+          <!-- field 1 -->
+          <div class="form_row main_bg_color border_all">
+            <div class="form_left">
+              <div class="icons time_icon"></div>
+            </div>
+            <div class="form_right">
+              <ion-item no-lines>
+                <ion-datetime [(ngModel)]="trip.starttime" displayFormat="HH:mm" placeholder="{{today | date:'HH:mm'}}" clearOnEdit></ion-datetime>
+              </ion-item>
+            </div>
+          </div>
+          <div class="buttons_area border_all_dark" (click)="editTrip(trip)">
+            <div class="button_left">
+              <div class="icons driver_icon"></div>
+            </div>
+            <div class="button_right">
+              <p>Edit this Ride</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+  <ion-footer>
+    <ion-toolbar color="main">
+      <div class="footer_bar">
+        <div class="footer_home" (click)="home()">
+          <div class="icons home_icon"></div>
+        </div>
+        <div class="footer_profile">
+          <div class="icons profile_icon"></div>
+        </div>
+        <div class="footer_rides" (click)="editRides()">
+          <div class="icons rides_icon"></div>
+        </div>
+        <div class="footer_settings">
+          <div class="icons settings_icon"></div>
+        </div>
+      </div>
+    </ion-toolbar>
+  </ion-footer>
+</div>

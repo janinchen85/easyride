@@ -1,0 +1,54 @@
+<div class="body">
+  <ion-header>
+    <ion-navbar color="main">
+      <ion-title>
+        <h5>{{ title }}</h5>
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+  <ion-content>
+    <div class="main_content_area">
+      <div class="main_content">
+        <div class="description_area main_bg_color border_all">
+          <h4>Welcome to
+            <span>EasyRide</span>
+            <br> What are you looking for?</h4>
+        </div>
+        <div class="buttons_area border_all_dark" navPush="SearchPage">
+          <div class="button_left">
+            <div class="icons driver_icon"></div>
+          </div>
+          <div class="button_right">
+            <p>Search for a driver</p>
+          </div>
+        </div>
+        <div class="buttons_area border_all_dark" navPush="SearchPage">
+          <div class="button_left">
+            <div class="icons passenger_icon"></div>
+          </div>
+          <div class="button_right">
+            <p>Search for passenger(s)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+  <ion-footer>
+    <ion-toolbar color="main">
+      <div class="footer_bar">
+        <div class="footer_home" (click)="home()">
+          <div class="icons home_icon"></div>
+        </div>
+        <div class="footer_profile">
+          <div class="icons profile_icon"></div>
+        </div>
+        <div class="footer_rides" (click)="editRides()">
+          <div class="icons rides_icon"></div>
+        </div>
+        <div class="footer_settings">
+          <div class="icons settings_icon"></div>
+        </div>
+      </div>
+    </ion-toolbar>
+  </ion-footer>
+</div>
